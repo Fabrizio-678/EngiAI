@@ -5,6 +5,4 @@ setuptools==59.6.0
 wheel==0.37.1
 pymongo==3.12.3
 pyyaml==5.4.1
-spacy==2.3.9
-chatterbot==1.0.5
-chatterbot-corpus==1.2.0
+spacy==2.1.9
