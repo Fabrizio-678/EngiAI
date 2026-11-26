@@ -3,7 +3,7 @@ set -e
 
 if [ ! -f "links_data_base.db" ]; then
     echo "Descargando links_data_base.db (3.32 GB) desde Hugging Face..."
-    curl -L "https://huggingface.co" -o links_data_base.db
+    curl -fL "https://huggingface.co" -o links_data_base.db
     echo "Descarga completada."
 fi
 
