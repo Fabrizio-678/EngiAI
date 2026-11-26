@@ -19,7 +19,7 @@ def get_posts():
     conn = connect_with_db()
     cursor = conn.cursor()
 
-    read_db = 'SELECT title, link, description, image_url FROM links LIMIT ? OFFSET ?'
+    read_db = 'SELECT title, link, description, icon_html, blueprint_string, blueprint_json, info_json, preview_image_url FROM links LIMIT ? OFFSET ?'
     selected_posts = cursor.execute(read_db, (limit, offset)).fetchall()
 
     total_posts = cursor.execute('SELECT COUNT(*) FROM links').fetchone()[0]
